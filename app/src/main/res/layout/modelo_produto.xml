@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idCardProduto"
     android:layout_width="180dp"
     android:layout_height="250dp"
-    android:id="@+id/idCardProduto"
     android:layout_margin="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
         android:orientation="vertical">
+
 
         <ImageView
             android:layout_width="160dp"
             android:layout_height="230dp"
-            android:src="#2c2c2c"
-            />
+            android:src="#2c2c2c" />
 
         <TextView
+            android:id="@+id/txtDescrProdutos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prato"
-            android:id="@+id/txtDescrProdutos"
-            />
+            android:text="Prato" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

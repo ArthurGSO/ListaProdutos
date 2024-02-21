@@ -14,7 +14,38 @@ public class ProdutosAdapter {
 
     private Context context;
     private List<> ListaProdutos;
+
+    //COnstrutor da classe adapter
+    public ProdutosAdapter(Context context, List<> listaProdutos) {
+        this.context = context;
+        ListaProdutos = listaProdutos;
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder{
+        public ImageView imgProduto() {
+            return imgProduto;
+        }
+
+        public void setImgProduto(ImageView imgProduto) {
+            this.imgProduto = imgProduto;
+        }
+
+        public TextView txtProduto() {
+            return txtProduto;
+        }
+
+        public void setTxtProduto(TextView txtProduto) {
+            this.txtProduto = txtProduto;
+        }
+
+        public MaterialCardView cardProduto() {
+            return cardProduto;
+        }
+
+        public void setCardProduto(MaterialCardView cardProduto) {
+            this.cardProduto = cardProduto;
+        }
+
         //declarando as variáveis que vão representar o xml no java
         ImageView imgProduto;
         TextView txtProduto;
